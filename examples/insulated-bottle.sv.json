@@ -1,0 +1,65 @@
+{
+  "product_handle": "insulated-bottle",
+  "template_name": "lp-insulated-bottle-sv",
+  "locale": "sv",
+  "announcement": "Fri frakt vid köp av två flaskor eller fler",
+  "subtitle": "Kallt i 24 timmar. Varmt i 12.",
+  "trust": [
+    "30 dagars returrätt",
+    "Skickas inom 24 timmar",
+    "BPA-fri"
+  ],
+  "images": [
+    "images/bottle-1.svg",
+    "images/bottle-2.svg",
+    "images/bottle-3.svg"
+  ],
+  "bullets": [
+    "Håller drycken kall i 24 timmar och varm i 12",
+    "Dubbelväggigt rostfritt stål",
+    "Locket tål maskindisk",
+    "Finns i 500 ml och 750 ml"
+  ],
+  "low_stock_threshold": 5,
+  "show_rating": true,
+  "payment_methods": [
+    "Klarna",
+    "Visa",
+    "Mastercard"
+  ],
+  "problem": {
+    "headline": "Ljummet redan till lunch?",
+    "body": "De flesta flaskor ger upp efter några timmar. Vattnet du fyllde på i morse är rumstempererat vid tolv, och kaffet från klockan sju är kallt innan första mötet är slut."
+  },
+  "features": [
+    {
+      "title": "Håller temperaturen hela dagen",
+      "body": "Två väggar av stål med vakuum emellan. Kalla drycker håller sig kalla i 24 timmar och varma i 12.",
+      "image": "images/feature-temperature.svg"
+    },
+    {
+      "title": "Två storlekar",
+      "body": "500 ml för väskan du bär varje dag, 750 ml för långa dagar ute.",
+      "image": "images/feature-sizes.svg"
+    },
+    {
+      "title": "Lätt att hålla ren",
+      "body": "Locket tål maskindisk. Flaskan sköljs för hand på några sekunder, och alla delar är BPA-fria.",
+      "image": "images/feature-cleaning.svg"
+    }
+  ],
+  "faq": [
+    {
+      "q": "Hur lång är leveranstiden?",
+      "a": "Beställningar skickas inom 24 timmar på vardagar och kommer fram inom 3 till 6 vardagar."
+    },
+    {
+      "q": "Kan jag returnera flaskan?",
+      "a": "Ja. Oanvända flaskor kan returneras inom 30 dagar från leverans."
+    },
+    {
+      "q": "Tål den maskindisk?",
+      "a": "Locket gör det. Själva flaskan diskas för hand."
+    }
+  ]
+}

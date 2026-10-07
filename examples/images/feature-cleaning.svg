@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder illustration of a lid in a dishwasher">
+  <rect width="800" height="600" fill="#eef1f4"/>
+  <rect x="250" y="170" width="300" height="260" rx="22" fill="#fff" stroke="#16324a" stroke-width="10"/>
+  <circle cx="400" cy="300" r="78" fill="none" stroke="#16324a" stroke-width="10"/>
+  <rect x="372" y="262" width="56" height="76" rx="12" fill="#16324a"/>
+  <circle cx="290" cy="205" r="9" fill="#16324a"/>
+</svg>

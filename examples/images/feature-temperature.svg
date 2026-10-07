@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Placeholder illustration: 24 hours cold, 12 hours hot">
+  <rect width="800" height="600" fill="#e8eef3"/>
+  <circle cx="290" cy="300" r="110" fill="#16324a"/>
+  <text x="290" y="322" font-family="Helvetica, Arial, sans-serif" font-size="64" font-weight="700" fill="#fff" text-anchor="middle">24 h</text>
+  <circle cx="530" cy="300" r="90" fill="#c9562b"/>
+  <text x="530" y="320" font-family="Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#fff" text-anchor="middle">12 h</text>
+</svg>

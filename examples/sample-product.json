@@ -1,0 +1,55 @@
+{
+  "shop": {
+    "name": "Example Store",
+    "money_format": "{{amount}} kr"
+  },
+  "product": {
+    "title": "Insulated Bottle",
+    "handle": "insulated-bottle",
+    "price": 24900,
+    "compare_at_price": 29900,
+    "options_with_values": [
+      {
+        "name": "Size",
+        "values": [
+          "500 ml",
+          "750 ml"
+        ]
+      }
+    ],
+    "variants": [
+      {
+        "id": 1001,
+        "title": "500 ml",
+        "option1": "500 ml",
+        "available": true,
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 4
+      },
+      {
+        "id": 1002,
+        "title": "750 ml",
+        "option1": "750 ml",
+        "available": true,
+        "inventory_management": "shopify",
+        "inventory_policy": "deny",
+        "inventory_quantity": 38
+      }
+    ],
+    "metafields": {
+      "reviews": {
+        "rating": {
+          "value": {
+            "rating": "4.6",
+            "scale_min": "1.0",
+            "scale_max": "5.0"
+          }
+        },
+        "rating_count": {
+          "value": 128
+        }
+      }
+    }
+  }
+}

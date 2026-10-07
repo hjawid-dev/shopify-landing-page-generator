@@ -1,0 +1,65 @@
+{
+  "product_handle": "insulated-bottle",
+  "template_name": "lp-insulated-bottle",
+  "locale": "en",
+  "announcement": "Free shipping on two bottles or more",
+  "subtitle": "Cold for 24 hours. Hot for 12.",
+  "trust": [
+    "30-day returns",
+    "Dispatched within 24 hours",
+    "BPA-free"
+  ],
+  "images": [
+    "images/bottle-1.svg",
+    "images/bottle-2.svg",
+    "images/bottle-3.svg"
+  ],
+  "bullets": [
+    "Keeps drinks cold for 24 hours and hot for 12",
+    "Double-walled stainless steel",
+    "The lid goes in the dishwasher",
+    "Comes in 500 ml and 750 ml"
+  ],
+  "low_stock_threshold": 5,
+  "show_rating": true,
+  "payment_methods": [
+    "Klarna",
+    "Visa",
+    "Mastercard"
+  ],
+  "problem": {
+    "headline": "Lukewarm by lunchtime?",
+    "body": "Most bottles give up after a few hours. The water you filled in the morning is room temperature by noon, and the coffee you poured at seven is cold before the first meeting is over."
+  },
+  "features": [
+    {
+      "title": "Holds the temperature all day",
+      "body": "Two walls of steel with a vacuum between them. Cold drinks stay cold for 24 hours and hot drinks stay hot for 12.",
+      "image": "images/feature-temperature.svg"
+    },
+    {
+      "title": "Two sizes",
+      "body": "500 ml for the bag you carry every day, 750 ml for long days out.",
+      "image": "images/feature-sizes.svg"
+    },
+    {
+      "title": "Easy to keep clean",
+      "body": "The lid goes in the dishwasher. The bottle is rinsed by hand in a few seconds, and every part is BPA-free.",
+      "image": "images/feature-cleaning.svg"
+    }
+  ],
+  "faq": [
+    {
+      "q": "How long does delivery take?",
+      "a": "Orders are dispatched within 24 hours on business days and arrive in 3 to 6 business days."
+    },
+    {
+      "q": "Can I return it?",
+      "a": "Yes. Unused bottles can be returned within 30 days of delivery."
+    },
+    {
+      "q": "Can it go in the dishwasher?",
+      "a": "The lid can. The bottle itself is washed by hand."
+    }
+  ]
+}
