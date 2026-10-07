@@ -93,9 +93,16 @@ There are 35 tests. They cover:
 
 The page tests render the template with a local Liquid engine. The publishing tests use a stand-in for the store. The GraphQL operations are checked against Shopify's Admin API schema.
 
+I also checked a built page in a Shopify development store:
+
+- **Shopify's own linter, Theme Check, finds no errors in the template.** Its first run led to two fixes: images now have dimensions, and the page uses system fonts instead of loading fonts from a third party.
+- **Shopify accepted the template**, uploaded with the Shopify CLI to the store's theme. No other theme file was changed.
+- **The page rendered for a real product**, with the store's own title and price format, and add-to-cart put the product in the cart.
+
 ## Limitations
 
-- **This version has not been run against a live store.** The checks above are as far as it has been taken.
+- **The `publish` command has not been run against a store.** It needs an app with Shopify's exemption for writing theme files, which I do not have. The store check above used the Shopify CLI for the upload.
+- **The low-stock line and the rating have only been tested locally.** The product in the development store had neither low stock nor reviews, so those lines were correctly left out there, but never shown.
 - **The preview is an approximation.** It uses a local Liquid engine with stand-ins for Shopify's own features, so it shows layout and copy but is not an exact copy of what Shopify renders.
 - **The page stands on its own.** It does not use the theme's header, footer or cart drawer, and add-to-cart goes to the cart page.
 - **Only the product's first option can be chosen**, for example size but not size and colour.
