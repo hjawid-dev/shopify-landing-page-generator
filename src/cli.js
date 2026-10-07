@@ -42,6 +42,13 @@ function loadBrief(file, { requireHttpsImages = false } = {}) {
   return page;
 }
 
+/** Shopify serves images fastest from its own CDN, so point out the ones that live elsewhere. */
+function noteRemoteImages(page) {
+  const images = [...page.images, ...(page.features ?? []).map((feature) => feature.image).filter(Boolean)];
+  const remote = images.filter((image) => !/^https:\/\/cdn\.shopify\.com\//.test(image));
+  if (remote.length) console.log(`Note: ${remote.length} image(s) are not on Shopify's CDN. Upload them under Content → Files for faster pages.`);
+}
+
 function writeOut(relativePath, content) {
   const file = path.join('out', relativePath);
   mkdirSync(path.dirname(file), { recursive: true });
@@ -77,6 +84,7 @@ async function main() {
     const page = loadBrief(briefFile);
     // Laid out like a theme folder, so the file can also be pushed with the Shopify CLI.
     console.log(`Wrote ${writeOut(path.join('theme', templateFilename(page)), buildTemplate(page))}`);
+    noteRemoteImages(page);
     return;
   }
 
@@ -104,6 +112,7 @@ async function main() {
 
   if (command === 'publish') {
     const page = loadBrief(briefFile, { requireHttpsImages: true });
+    noteRemoteImages(page);
     await publish(connect(), page, buildTemplate(page), {
       theme: values.theme,
       assign: values.assign,

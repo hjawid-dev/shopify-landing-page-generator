@@ -43,13 +43,13 @@ function gallery(images, s) {
   const slides = images
     .map((src, i) => `
           <div class="g-slide${i === 0 ? ' active' : ''}">
-            <img src="${e(src)}" alt="${e(s.imageAlt.replace('[n]', i + 1))}" loading="${i === 0 ? 'eager' : 'lazy'}">
+            <img src="${e(src)}" alt="${e(s.imageAlt.replace('[n]', i + 1))}" width="800" height="800" loading="${i === 0 ? 'eager' : 'lazy'}">
           </div>`)
     .join('');
   const thumbs = images
     .map((src, i) => `
           <button class="g-thumb${i === 0 ? ' active' : ''}" data-slide="${i}" type="button" aria-label="${e(s.imageAlt.replace('[n]', i + 1))}">
-            <img src="${e(src)}" alt="" loading="lazy">
+            <img src="${e(src)}" alt="" width="68" height="68" loading="lazy">
           </button>`)
     .join('');
   return `
@@ -123,7 +123,7 @@ function features(items) {
   const rows = items
     .map((feature, i) => `
       <div class="feat-row${i % 2 ? ' feat-row--rev' : ''}">
-        ${feature.image ? `<div class="feat-media"><img src="${e(feature.image)}" alt="${e(feature.title)}" loading="lazy"></div>` : ''}
+        ${feature.image ? `<div class="feat-media"><img src="${e(feature.image)}" alt="${e(feature.title)}" width="800" height="600" loading="lazy"></div>` : ''}
         <div class="feat-copy">
           <p class="feat-eye">${String(i + 1).padStart(2, '0')}</p>
           <h3>${e(feature.title)}</h3>
@@ -195,9 +195,6 @@ export function buildTemplate(page) {
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ product.title | escape }} – {{ shop.name | escape }}</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;1,300&display=swap" rel="stylesheet">
   {{ content_for_header }}
   <style>
 ${CSS}  </style>
