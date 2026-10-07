@@ -1,0 +1,29 @@
+{
+  "name": "shopify-landing-page-generator",
+  "version": "1.0.0",
+  "description": "Builds a product landing page from a JSON brief and publishes it to a Shopify theme through the Admin API",
+  "type": "module",
+  "license": "MIT",
+  "author": "Hjalmar Widlund",
+  "private": true,
+  "engines": {
+    "node": ">=20.12"
+  },
+  "bin": {
+    "lp": "src/cli.js"
+  },
+  "scripts": {
+    "lp": "node src/cli.js",
+    "preview": "node src/cli.js preview examples/insulated-bottle.en.json",
+    "lint": "eslint .",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "liquidjs": "^10.21.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.12.0",
+    "globals": "^17.13.0"
+  }
+}
