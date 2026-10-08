@@ -61,7 +61,7 @@ Publishing to a store with customers on it should not be able to break a product
 
 ## Markets
 
-The fixed interface text, such as the add-to-cart button and the FAQ heading, exists in English, Swedish, Finnish, Norwegian, Danish and Dutch. The brief chooses one with `"locale"`.
+The fixed interface text, such as the add-to-cart button and the FAQ heading, exists for the five markets, in Swedish, Finnish, Norwegian, Danish and Dutch, and in English. The brief chooses one with `"locale"`.
 
 <p align="center">
   <img src="docs/page-mobile-sv.png" alt="The same page in Swedish at phone width" width="300">
